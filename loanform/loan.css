@@ -1,0 +1,79 @@
+/* body{
+     color:black;
+     text-align: left;
+background-color:white;
+
+}
+
+
+    .row{
+        margin: 5px;
+        
+    }
+    #pair{
+    
+        
+    margin-right: -90px;
+        margin-top: 10px;
+
+        
+        }
+
+ .row{
+     width: 70%;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ } */
+
+
+
+body{
+    color: black;
+    background-color:#fff;
+    
+}
+/* #pair{
+    margin-right: -90%;
+} */
+.input{
+    float: right;
+    width: 400px;
+}
+
+#form{
+    padding-left: 280px;
+    padding-top: 50px;
+    padding-right: 0px;
+}
+#pair{
+    padding-top: 70px;
+}
+#lend{
+    padding-left: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

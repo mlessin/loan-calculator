@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="loan.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div id="form" class="col-md-6">
+            <form name="loandata">
+
+                <table class="tableloan">
+
+                    <br><strong>Enter Loan Data:</strong></br>
+
+                    <tr>
+                        <td>Amount of the Loan ($):</td>
+                        <td>
+                            <input type="text" name="borrowed" id="borrowed" onchange="calculate();">
+                            
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Annual interest (%):</td>
+                        <td>
+                            <input type="text" name="interest" id="interest" onchange="calculate();">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Repayment period (year):</td>
+                        <td>
+                            <input type="text" name="year" id="year" onchange="calculate();">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Zipcode(to find lenders):</td>
+                        <td>
+                            <input type="text" name="zip" id="zip" onchange="calculate();">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><strong>Approximate payments:</strong> </td>
+                        <td>
+                            <button><strong> calculate</strong></button>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Monthly payments:</td>
+                        <td>$<span class="output" name="monthly" id="monthly"></span></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Total payment:</td>
+                        <td>$<span class="output" name="totalpay" id="totalpay "></span></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Total interest:</td>
+                        <td>$<span class="output" name="totalint" id="totalint "></span></td>
+                    </tr>
+
+
+
+                </table>
+            </form>
+        </div>
+
+        <div id="pair" class="col-md-6">
+            <strong>Balance, Culmlative Equity,and interest payment.</strong>
+            <img src="loan.png" alt="loan data table">
+        </div>
+
+        <div id="lend">
+
+            <strong> Sponsors:</strong>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfor your loan with one of
+            thesefine lenders:
+
+            <tr>
+                <td></td>
+
+                <td>
+                    <ul>
+                        <li>Bank of JavaScript</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>Credit Union</li>
+                    </ul>
+                </td>
+            </tr>
+
+        </div>
+    </div>
+    <script src="loan.js"></script>
+</body>
+
+</html>
